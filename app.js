@@ -4,7 +4,7 @@ let socket = require("socket.io") ;
 let app = express() ; // initalizig server
 
 app.use(express.static("public"));
-let port = 5000 ;
+let port = process.env.port || 5000 ;
 
 let server = app.listen(port ,() => {
 
