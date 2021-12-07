@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.option-cont{
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: rgba(206, 216, 219, 0.801);
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 5;
+}
+
+
+.toolbox-cont{
+    height: 5rem;
+    width: 40vw;
+    left: 30vw;
+    background-color: rgba(206, 216, 219, 0.801);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    position: absolute;
+    top: 2rem;
+    
+}
+
+.scale-tools{
+    animation-name: scale-tools;
+    animation-duration: 1s;
+}
+
+
+@keyframes scale-tools {
+
+    0%{
+
+        transform: scale(0.1);
+
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+
+        transform: scale(1);
+    }
+}
+
+.toolbox-cont > * {
+    height: 3rem;
+    width: 3rem;
+}
+
+
+.pencil-tool-cont{
+    /* background-color: yellowgreen; */
+    height: 5rem;
+    width: 8rem;
+    position: absolute;
+    top: 7rem;
+    left: 30.5vw;
+    background-color: rgba(206, 216, 219, 0.801);
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+
+}
+
+.pencil-width-cont{
+    height: 2rem;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pencil-width-cont > *{
+    width: 7rem;
+
+}
+
+.pencil-color-cont{
+    display: block;
+    /* background-color: rgb(107, 79, 79); */
+    height: calc(100% - 2rem);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.pencil-color{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.red{
+
+    background-color: red;
+
+}
+
+.black{
+    background-color: black;
+}
+
+.blue{
+    background-color: blue;
+}
+
+
+.eraser-tool-cont{
+
+    height: 2rem;
+    width: 7rem;
+    position: absolute;
+    top: 7rem;
+    background-color: rgba(206, 216, 219, 0.801);
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    left: 47.5rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.eraser-tool-cont input{
+    width: 80%;
+}
+
+.sticky-cont{
+    height: 16rem;
+    width: 16rem;
+    /* background-color: rgba(24, 93, 114, 0.801); */
+
+    border-radius: 0.4rem;
+    
+    position: absolute ;
+    top: 5rem;
+    left: 10rem;
+
+}
+
+.header-cont{
+    height: 2.5rem;
+    background-color: rgb(59, 56, 52);
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center;
+
+}
+
+.header-cont > * {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+
+.minimize{
+    background-color: rgb(11, 150, 29);
+}
+
+.remove{
+    background-color: rgb(240, 6, 6);
+}
+.note-cont{
+    height: calc(100% - 2.5rem);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.note-cont > textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
